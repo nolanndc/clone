@@ -1,0 +1,124 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Netflix Clone
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-black text-white">
+  <!-- Header -->
+  <header class="flex justify-between items-center p-4 bg-black bg-opacity-75 fixed w-full z-10">
+   <div class="flex items-center space-x-4">
+    <img alt="Netflix logo, a stylized red 'N' on a black background" class="h-8" src="https://placehold.co/100x50"/>
+    <nav class="hidden md:flex space-x-4">
+     <a class="text-white hover:text-gray-400" href="#">
+      Home
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      TV Shows
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      Movies
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      New &amp; Popular
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      My List
+     </a>
+    </nav>
+   </div>
+   <div class="flex items-center space-x-4">
+    <i class="fas fa-search text-white">
+    </i>
+    <i class="fas fa-bell text-white">
+    </i>
+    <img alt="User profile picture, a generic user icon" class="h-8 w-8 rounded-full" src="https://placehold.co/30x30"/>
+   </div>
+  </header>
+  <!-- Main Content -->
+  <main class="pt-16">
+   <!-- Hero Section -->
+   <section class="relative h-screen bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080');">
+    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black">
+    </div>
+    <div class="absolute bottom-0 p-8">
+     <h1 class="text-5xl font-bold">
+      Featured Movie Title
+     </h1>
+     <p class="mt-4 text-lg max-w-xl">
+      A brief description of the featured movie, highlighting its main plot points and why it's a must-watch.
+     </p>
+     <div class="mt-4">
+      <button class="bg-white text-black px-4 py-2 rounded-md font-bold flex items-center space-x-2">
+       <i class="fas fa-play">
+       </i>
+       <span>
+        Play
+       </span>
+      </button>
+      <button class="bg-gray-700 bg-opacity-75 text-white px-4 py-2 rounded-md font-bold flex items-center space-x-2 ml-4">
+       <i class="fas fa-info-circle">
+       </i>
+       <span>
+        More Info
+       </span>
+      </button>
+     </div>
+    </div>
+   </section>
+   <!-- Rows of Movies/Shows -->
+   <section class="p-8 space-y-8">
+    <!-- Row 1 -->
+    <div>
+     <h2 class="text-2xl font-bold mb-4">
+      Trending Now
+     </h2>
+     <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+      <img alt="Movie poster 1, a dramatic scene with main characters" class="w-64 h-40 object-cover rounded-md" src="https://placehold.co/300x200"/>
+      <img alt="Movie poster 2, an action-packed scene with explosions" class="w-64 h-40 object-cover rounded-md" src="https://placehold.co/300x200"/>
+      <img alt="Movie poster 3, a romantic scene with two characters embracing" class="w-64 h-40 object-cover rounded-md" src="https://placehold.co/300x200"/>
+      <img alt="Movie poster 4, a sci-fi scene with futuristic elements" class="w-64 h-40 object-cover rounded-md" src="https://placehold.co/300x200"/>
+      <img alt="Movie poster 5, a horror scene with a creepy atmosphere" class="w-64 h-40 object-cover rounded-md" src="https://placehold.co/300x200"/>
+     </div>
+    </div>
+    <!-- Row 2 -->
+    <div>
+     <h2 class="text-2xl font-bold mb-4">
+      Top Picks for You
+     </h2>
+     <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+      <img alt="Movie poster 6, a fantasy scene with magical creatures" class="w-64 h-40 object-cover rounded-md" src="https://placehold.co/300x200"/>
+      <img alt="Movie poster 7, a comedy scene with characters laughing" class="w-64 h-40 object-cover rounded-md" src="https://placehold.co/300x200"/>
+      <img alt="Movie poster 8, a thriller scene with intense moments" class="w-64 h-40 object-cover rounded-md" src="https://placehold.co/300x200"/>
+      <img alt="Movie poster 9, a documentary scene with real-life events" class="w-64 h-40 object-cover rounded-md" src="https://placehold.co/300x200"/>
+      <img alt="Movie poster 10, an animated scene with colorful characters" class="w-64 h-40 object-cover rounded-md" src="https://placehold.co/300x200"/>
+     </div>
+    </div>
+    <!-- Row 3 -->
+    <div>
+     <h2 class="text-2xl font-bold mb-4">
+      Recently Added
+     </h2>
+     <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+      <img alt="Movie poster 11, a historical scene with period costumes" class="w-64 h-40 object-cover rounded-md" src="https://placehold.co/300x200"/>
+      <img alt="Movie poster 12, a mystery scene with suspenseful elements" class="w-64 h-40 object-cover rounded-md" src="https://placehold.co/300x200"/>
+      <img alt="Movie poster 13, a drama scene with emotional moments" class="w-64 h-40 object-cover rounded-md" src="https://placehold.co/300x200"/>
+      <img alt="Movie poster 14, a musical scene with characters singing" class="w-64 h-40 object-cover rounded-md" src="https://placehold.co/300x200"/>
+      <img alt="Movie poster 15, a sports scene with competitive action" class="w-64 h-40 object-cover rounded-md" src="https://placehold.co/300x200"/>
+     </div>
+    </div>
+   </section>
+  </main>
+ </body>
+</html>
